@@ -1,0 +1,5 @@
+[workspace]
+members=["test_plugin1", "test_plugin2", "test_plugin3", "test_plugin4", "test_plugin5"]
+
+[workspace.dependencies]
+opendut-edgar-plugin-api = {path="../opendut/opendut-edgar-plugin-api", features=["plugin"]}

@@ -1,12 +1,11 @@
-use opendut_edgar_plugin_api::plugin::{export, host, trace, debug, info, warn, error};
-use opendut_edgar_plugin_api::plugin::host::{call_command, log, LogLevel};
+use opendut_edgar_plugin_api::plugin::export;
 use opendut_edgar_plugin_api::plugin::task::{Guest, Success, TaskFulfilled};
 
 struct TestPlugin4;
 
 impl Guest for TestPlugin4 {
     fn description() -> String {
-        String::from("Test Plugin 4 - Tasfulfilled Err")
+        String::from("Test Plugin 4 - Taskfulfilled Err")
     }
 
     fn check_fulfilled() -> Result<TaskFulfilled, ()> {

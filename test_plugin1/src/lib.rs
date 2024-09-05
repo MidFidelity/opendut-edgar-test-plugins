@@ -1,5 +1,4 @@
-use opendut_edgar_plugin_api::plugin::{export, host, trace, debug, info, warn, error};
-use opendut_edgar_plugin_api::plugin::host::{call_command, log, LogLevel};
+use opendut_edgar_plugin_api::plugin::{export, trace, debug, info, warn, error};
 use opendut_edgar_plugin_api::plugin::task::{Guest, Success, TaskFulfilled};
 
 struct TestPlugin1;
